@@ -32,13 +32,10 @@ const assignment = {};
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  let count = 0;
-  for (number in arrayOfNumbers){
-    if(number%2 == 0){
-      count++;
-    }
-    console.log(count);
-  };
+  let evenNumbers = arrayOfNumbers.filter(number =>{
+    return number%2 == 0
+  })
+  return evenNumbers.length;
 }
   assignment.countEvenNumbers = countEvenNumbers;
  
