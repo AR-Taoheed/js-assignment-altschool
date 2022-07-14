@@ -33,13 +33,14 @@ const assignment = {};
  */
 function countEvenNumbers(arrayOfNumbers) {
   let count = 0;
-  numbers.forEach((number)=>{
+  for (number in arrayOfNumbers){
     if(number%2 == 0){
       count++;
     }
     console.log(count);
-  });
+  };
 }
+  assignment.countEvenNumbers = countEvenNumbers;
  
 
 /**
